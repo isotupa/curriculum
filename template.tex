@@ -1,0 +1,165 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com) and Harsh (harsh.gadgil@gmail.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+% Command for printing skill overview bubbles
+\contact{\\
+\textbf{Teléfono}\\
+(+34) 653 56 65 55
+
+\textbf{Localidad}\\
+Madrid, España
+
+\textbf{Correo electrónico}\\
+marko.isotupa01@gmail.com
+
+\textbf{GitHub}\\
+{\href{github.com/isotupa}{github.com/isotupa}}
+
+\textbf{LinkedIn}\\
+linkedin.com/in/marko-isotupa
+}
+
+% Programming skill bars
+\programming{{\textbf{Francés} B2 (DELF) / 3}, {\textbf{Finlandés} Nativo / 6}, {\textbf{Inglés} C2 (Cambridge) / 6}, {\textbf{Español} Nativo / 6}}
+
+% Projects text
+\education{
+\textbf{Grado en Ingeniería Informática}\\
+Universidad Politécnica de Madrid \\
+2019 - 2023 | Madrid, España
+
+\textbf{Bachillerato Tecnológico}\\
+Kensington School \\
+2017 - 2019 | Madrid, España
+}
+
+\accionsocial{
+\textbf{Reparación de colegio y clases de inglés en Tailandia}
+{\begin{itemize}
+        \item Adquisición de competencias de trabajo en equipo para coordinar la repara-ción de un colegio.
+        \item Enseñar inglés a una clase de cerca de 50 niños de bajo nivel.
+\end{itemize}}
+}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\cvname{MARKO ISOTUPA CAÑIZAL} % Your name
+\cvjobtitle{ Ingeniero Informático} % Job
+% title/career
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makeprofile % Print the sidebar
+ 
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\color{black!70}
+\section{Experiencia}
+
+\begin{twenty} % Environment for a list with descriptions
+\twentyitem
+    	{Sep 2023 -}
+		{Presente}
+        {Investigador}
+        {CVAR (Computer Vision and Aerial Robotics}
+        {}
+        {\begin{itemize}
+        \item Cooperación de proyectos de investigación relacionados con visión computacional aplicado drones con el fin de automatizarlos.
+        \item Implementación de tecnologías de reconocimiento facial, de gestos y de posturas para modificar el comportamiento de drones autónomos.
+        \item Trabajo con simuladores y herramientas de control de robots.
+        \end{itemize}}
+        \\
+	\twentyitem
+    	{Mayo 2020 -}
+		{Presente}
+        {Responsable del observatorio}
+        {Obsevatorio Astronómico UPM}
+        {}
+        {
+        {\begin{itemize}
+        \item Puesta en marcha del observatorio astronómico, arreglándolo y manteniéndolo por iniciativa propia.
+        \item Liderar tres equipos de unos diez estudiantes para planear y ejecutar eventos en el observatorio.
+        \item Organización de cerca de diez eventos de observación de estrellas.
+    \end{itemize}}
+        }
+    \\   
+    \twentyitem
+   		{Sep 2021 -}
+		{Jun 2023}
+        {Azafato de eventos}
+        {Múltiples empresas}
+        {}
+        {
+        {\begin{itemize}
+        \item Coordinación y asistencia en la ejecución de más de veinte eventos distintos de manera eficiente.
+        \item Trabajo en equipo y colaboración en situaciones de alta presión.
+    \end{itemize}}
+        }
+        
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 RESEARCH
+%----------------------------------------------------------------------------------------
+\section{Habilidades de TIC}
+\textbf{Lenguajes de programación}\\
+\vspace{5pt}
+Java $\textbullet$ C $\textbullet$ Python $\textbullet$ R $\textbullet$ Assembly $\textbullet$ MatLab $\textbullet$ Bash $\textbullet$ Prolog $\textbullet$ Lua\\
+\textbf{Herramientas}\\
+\vspace{5pt}
+JUnit Testing $\textbullet$ Android Studio $\textbullet$ VirtualBox $\textbullet$ GNU/Linux $\textbullet$ redes IP $\textbullet$ Git $\textbullet$ Docker\\
+\textbf{Administración de Bases de Datos}\\
+\vspace{5pt}
+MySQL $\textbullet$ JDBC\\
+\textbf{Herramientas de ML/AI}\\
+\vspace{5pt}
+Keras $\textbullet$ Matplotlib $\textbullet$ Pandas $\textbullet$ OpenCV\\
+\textbf{Metodologías}\\
+Agile $\textbullet$ SixSigma\\
+
+\section{Proyectos}
+\textbf{\underline{Implementación de una Red Neuronal en C desde Cero}}
+{\begin{itemize}
+        \item Desarrollé una red neuronal desde cero utilizando el lenguaje de programación C, con el objetivo de profundizar en la comprensión del funcionamiento interno de las redes neuronales.
+        \item Logré que la red neuronal fuera capaz de entrenar con conjuntos de datos específicos y realizar predicciones precisas.
+        \item \textbf{Herramientas usadas:} C, Redes neuronales, ML
+\end{itemize}}
+\textbf{\underline{Desarrollo de Minishell de Unix en C}}
+{\begin{itemize}
+        \item Diseñé un intérprete de comandos capaz de ejecutar programas, gestionar señales, manejar redirecciones, pipes y ejecución en segundo plano, entre otras funcionalidades esenciales de un shell Unix.
+        \item \textbf{Herramientas usadas:} C, compiladores, UNIX, Bash, Sistemas Operativos
+\end{itemize}}
+\textbf{\underline{Control de Drones mediante Gestos Captados por Cámara Integrada}}
+{\begin{itemize}
+        \item Concebí, diseñé e implementé un sistema que permitía controlar drones utilizando gestos reconocidos por la cámara integrada en el dron, combinando visión por computador y tecnologías de vuelo autónomo.
+        \item \textbf{Herramientas usadas:} Python: OpenCV, MediaPipe... Linux, simuladores, Docker
+\end{itemize}}
+
+
+\end{document} 
+
