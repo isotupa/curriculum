@@ -1,4 +1,4 @@
-\ProvidesClass{twentysecondcv}[2015/02/28 CV class]
+\ProvidesClass{cv}[2015/02/28 CV class]
 \LoadClass{article}
 \NeedsTeXFormat{LaTeX2e}
 
@@ -9,7 +9,6 @@
 \RequirePackage[quiet]{fontspec}
 \RequirePackage[sfdefault]{ClearSans}
 
-\def\arrow#1{\pspicture[shift=2pt](#1,0)\psline{->}(#1,0)\endpspicture}
 
 \usepackage{pstricks}
 
@@ -110,8 +109,6 @@
 %	 MISC CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-% \renewcommand{\bfseries}{\color{black}} % Make \textbf produce coloured text instead
-
 \pagestyle{empty} % Disable headers and footers
 
 \setlength{\parindent}{0pt} % Disable paragraph indentation
@@ -145,28 +142,20 @@
     \vspace{8pt}%
     \begin{tikzpicture}[remember picture,overlay]
         \node[anchor=base west, inner sep=0pt, text width=5cm] (text) at (-0cm,0) {\textcolor{black!0}{\huge #1}};
+        % \node [rectangle, fill=sidecolor, anchor=north, minimum width=9.5cm, minimum height=\paperheight+1cm] (box) at (-5cm,0.5cm){};
         % \draw[blue, thick] (text.north west) rectangle ([yshift=-0.2\baselineskip]text.south east);
     \end{tikzpicture}%
 }
-% Define custom commands for CV info
-\newcommand{\cvdate}[1]{\renewcommand{\cvdate}{#1}}
-\newcommand{\cvlinkedin}[1]{\renewcommand{\cvlinkedin}{#1}}
-\newcommand{\cvgithub}[1]{\renewcommand{\cvgithub}{#1}}
-\newcommand{\cvmail}[1]{\renewcommand{\cvmail}{#1}}
-\newcommand{\cvnumberphone}[1]{\renewcommand{\cvnumberphone}{#1}}
-\newcommand{\cvaddress}[1]{\renewcommand{\cvaddress}{#1}}
-\newcommand{\cvsite}[1]{\renewcommand{\cvsite}{#1}}
-\newcommand{\aboutme}[1]{\renewcommand{\aboutme}{#1}}
-\newcommand{\profilepic}[1]{\renewcommand{\profilepic}{#1}}
+
+% Define custom commands for cv name and job title
 \newcommand{\cvname}[1]{\renewcommand{\cvname}{#1}}
 \newcommand{\cvjobtitle}[1]{\renewcommand{\cvjobtitle}{#1}}
 
-% Command for printing the contact information icons
-\newcommand*\icon[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=1pt, fill=mainblue,mainblue,text=white] (char) {#1};}}
+
 
 % Command for printing skill progress bars
-\newcommand\programming[1]{ 
-	\renewcommand{\programming}{
+\newcommand\idiomas[1]{ 
+	\renewcommand{\idiomas}{
 		\begin{tikzpicture}
         	% \node [above right] at (0, 4) {$0 \: LOC \: \arrow{3.2} \: 5000 \: LOC$};
 			\foreach [count=\i] \x/\y in {#1}{
@@ -245,7 +234,7 @@
        
 	 % {\large \textbf{Programming}} 
 
-		 \programming
+		 \idiomas
          
         \vspace{3mm}
         \profilesection{Educación}
@@ -305,16 +294,6 @@
 	\end{tabular*}
 }
 
-% \newcommand{\twentyitem}[5]{%
-% 	#1&\parbox[t]{0.83\textwidth}{%
-% 		\textbf{#2}% 
-% 		\hfill%
-% 		{\footnotesize#3}\\%
-%         \ifblank{#4}{}{#4 \\}
-% 		#5\vspace{\parsep}%
-% 	}\\
-% }
-
 \newcommand{\twentyitem}[6]{%
 	#1&\parbox[t]{0.83\textwidth}{%
 		\textbf{#3}% 
@@ -351,7 +330,6 @@
 %----------------------------------------------------------------------------------------
 
 \RequirePackage[left=7.6cm,top=0.1cm,right=1cm,bottom=0.1cm,nohead,nofoot]{geometry}
-
 
 
 
